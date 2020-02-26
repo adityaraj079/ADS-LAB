@@ -4,13 +4,19 @@ class parent
 {
 int par_id;
 public:
-//this is the parent class 
 father()
 {
- cout<<"i am the father function";
+ cout<<"I am the father function";
 }
 };
 class child : public parent
+{
+ son()
+ {
+     cout<<"i am son";
+ }
+};
+
 int main()
 {
  child obj1;
