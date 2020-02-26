@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+void main() 
+{
+int a,b,S,D,M,Div;
+        printf("Enter the value of a and b = \n");
+        scanf("%d%d",&a,&b);
+        S=a+b;
+	D=a-b;
+	M=a*b;
+	Div=a/b;
+        printf("\nThe sum of two numbers =%d\n",S);
+        printf("\nthe difference of two numbers =%d\n",D);
+	printf("\nThe multiplication of two numbers =%d",M);
+	printf("\nThe division of two numbers =%d",Div);
+}
