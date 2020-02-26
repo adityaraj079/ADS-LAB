@@ -4,14 +4,14 @@ class parent
 {
 int par_id;
 public:
-father()
+void father()
 {
- cout<<"I am the father function";
+ cout<<"I am the father function";     //This is the father class
 }
 };
 class child : public parent
 {
- son()
+void son()
  {
      cout<<"i am son";
  }
@@ -19,7 +19,7 @@ class child : public parent
 
 int main()
 {
- child obj1;
- obj1.father();
+ child obj1;            //Declared child class and object
+ obj1.father();         //Access father
  return 0;
 }
