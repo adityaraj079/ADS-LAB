@@ -1,0 +1,47 @@
+#include<iostream>
+#include<cmath>
+#define Area 314
+#define Pi 3.14
+class Perimeter
+{
+float sq_side=sqrt(Area);
+float rec_length=2;
+float rec_bredth=(Area/rec_len);
+float tri_height=4;
+float tri_base=(Area*2)/tri_height:
+float radius=sqrt(Area/Pi);
+float sq_peri=4*sq_side;
+float rec_peri=2*(rec_length+rec_bredth);
+float tri_peri=tri_hyp+tri_base+tri_height;
+float circle_peri=2*Pi*radius;
+public;
+void Largest_peri()
+{std:cout<<"The shape with the Largest Perimeter is :"<<std::endl;
+if(sq_peri>rec_peri&&sq_peri>tri-peri&&sq_peri>circle_peri)
+std::cout<<"Square:"<<sq_peri<<std::endl;
+else if (rec_peri>sq_peri&&rec_peri>tri_peri&&rec_pri>circle_peri)
+std::cout<<"Rectangle:"<<rec_peri<<std::endl;
+else if (tri_peri>sq_peri&&tri_peri>rec_peri&&tri_pri>circle_peri)
+std::cout<<"Triangle:"<<tri_peri<<std::endl;
+else
+std::count<<"Circle:"<<circle_peri<<std::endl;
+}
+void Smallest_Peri()
+{
+std::cout<<"The Shape with the Smallest Perimeter is :"<<std::endl;
+if (sq_peri<rec_peri&&sq_peri<tri_peri&&sq_pri<circle_peri)
+std::cout<<"Square:"<<sq_peri<<std::endl;
+else if (rec_peri<sq_peri&&rec_peri<tri_peri&&rec_pri<circle_peri)
+std::cout<<"Rectangle:"<<rec_peri<<std::endl;
+else if (tri_peri<sq_peri&&tri_peri<rec_peri&&tri_pri<circle_peri)
+std::cout<<"Triangle:"<<rec_peri<<std::endl;
+else
+std::count<<"Circle:"<<circle_peri<<std::endl;
+}
+};
+int main()
+{ Perimeter Shape;
+Shape.Largest_Peri();
+Shape.Smallest_Peri();
+return 0;
+}
