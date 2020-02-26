@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main(){
+int r,A,V,pi=3.14;
+	printf("\nEnter the value of r = \n");
+	scanf("%d",&r);
+	A=4*pi*(r*r);
+	V=4/3*pi*(r*r*r);
+	printf("\nthe area of sphere =%d\n",A);
+	printf("\nthe volume of sphere =%d\n",V);
+}
