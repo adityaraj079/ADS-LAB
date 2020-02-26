@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+int f=0,s=1,sum,i;
+printf("%d\n%d",f,s);
+for(i=0;i<=10;i++)
+   {
+    sum=f+s;
+    f=s;
+    s=sum;
+    printf("\n%d\n",sum);  
+   }
+}
