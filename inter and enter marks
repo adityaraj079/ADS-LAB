@@ -1,0 +1,68 @@
+#include<iostream>
+#include<string.h>
+ using namespace std;
+ 
+class external
+ 
+ {
+ 	int phy, che, it;
+ 	float t_percentage, p_percentage,result;
+ 	char div[10];
+ 	public:
+ 	int fun()
+ 	{
+ 	int phy, che, it;
+ 	float t_percentage, p_percentage,result;
+ 	char div[10];
+    cout << "Enter the marks internals of Physics, Chemistry and Information Technology: ";
+    cin >> phy >> che >> it;
+    p_percentage=(phy+che+it)/3;
+     if (p_percentage >= 40)
+	strcpy(div, "PASS");
+
+    else
+	if (p_percentage <= 4)
+	    strcpy(div,"FAIL");
+cout << "Marks in Physics : " << phy << endl;
+       cout << "Marks in Chemistry : " << che << endl;
+       cout << "Marks in Information Technology : " << it << endl;
+       cout << "Percentage = " << p_percentage <<endl;
+       cout << "Division = " << div <<endl;
+   }
+   };
+    class internal  : public external
+     {
+     	int phy, che, it;
+ 	float t_percentage, p_percentage,result;
+ 	char div[10];
+     	public:
+     	int sleep()
+     	{
+	     cout << "Enter the marks externals of Physics, Chemistry and Information Technology: ";
+    cin >> phy >> che >> it;
+    t_percentage=(phy+che+it)/3;
+     if (t_percentage >= 40)
+	strcpy(div, "PASS");
+
+    else
+	if (t_percentage <= 4)
+	    strcpy(div,"FAIL");
+cout << "Marks in Physics : " << phy << endl;
+       cout << "Marks in Chemistry : " << che << endl;
+       cout << "Marks in Information Technology : " << it << endl;
+       cout << "Percentage = " << p_percentage <<endl;
+       cout << "Division = " << div <<endl;
+       
+       p_percentage=p_percentage*(40/100);
+       t_percentage=t_percentage*(60/100);
+       result=p_percentage+t_percentage;
+       return 0;
+   }
+ };
+ int main()
+ {
+ 	internal obj2;
+ 	obj2.fun();
+ 	obj2.sleep();
+ 	return 0;
+ }												
