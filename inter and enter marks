@@ -2,7 +2,7 @@
 #include<string.h>
  using namespace std;
  
-class external
+class internal
  
  {
  	int phy, che, it;
@@ -30,7 +30,7 @@ cout << "Marks in Physics : " << phy << endl;
        cout << "Division = " << div <<endl;
    }
    };
-    class internal  : public external
+      class external :virtual public internal
      {
      	int phy, che, it;
  	float t_percentage, p_percentage,result;
@@ -61,7 +61,7 @@ cout << "Marks in Physics : " << phy << endl;
  };
  int main()
  {
- 	internal obj2;
+ 	external obj2;
  	obj2.fun();
  	obj2.sleep();
  	return 0;
